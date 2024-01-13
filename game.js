@@ -6,7 +6,7 @@ var level = 0;
 
 
 
-$(document).keypress(function () {
+$(".Start").click(function () {
     if (!started) {
         $("#level-title").text("Level " + level);
         nextSequence();
@@ -52,6 +52,8 @@ function ainmatePress(currentColor) {
         $("#" + currentColor).removeClass("pressed");
     }, 100);
 }
+
+
 
 
 function checkAnswer(currentLevel) {
